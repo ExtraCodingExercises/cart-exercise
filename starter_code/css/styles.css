@@ -1,0 +1,154 @@
+/* Declare variables for brand colors */
+:root {
+    --brand-primary: #122211;
+    --brand-secondary: #80A56D;
+    --brand-tertiary: #bee7aa;
+    --brand-text: #051105;
+    --brand-text-rev: #FBE27B;
+    --brand-link: brown;
+    --max-content-width: 1200px;
+  }
+
+  /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Header */
+.fmHeader {
+    background: var(--brand-primary);
+    color: var(--brand-text-rev);
+    padding-top: 1rem;
+}
+
+.fmHeader__logo {
+    border-bottom: 2px solid black;
+}
+
+.fmHeader__logo_inner {
+    max-width: var(--max-content-width);
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.fmHeader__logo_inner a {
+    display:block;
+}
+
+.fmHeader__logo img {
+    max-height: 4rem;
+    min-width: 6rem;
+    display:block;
+}
+
+.fmHeader__nav {
+    background: var(--brand-secondary);
+    border-bottom: 1px solid var(--brand-primary)
+}
+
+.fmHeader__nav_inner {
+    max-width: var(--max-content-width);
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.fmHeader__nav a {
+    color: var(--brand-text);
+    text-decoration: none;
+    display: block;
+    padding: 1rem 2rem;
+    min-height: 48px;
+    min-width: 48px;
+}
+
+.fmHeader__nav a:hover {
+    background: var(--brand-primary);
+    color: var(--brand-text-rev);
+}
+
+/* Main Content */
+.fmMain{
+    max-width: var(--max-content-width);
+    margin: 0 auto 4rem auto;
+    padding: 2rem;
+    color: var(--brand-text);
+}
+
+.fmMain h1 {
+    color: var(--brand-primary);
+    margin-bottom: 1rem;
+}
+
+/* Shopping Cart */
+
+.fmCartTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 1.4rem;
+    border: 1px solid var(--brand-secondary);
+}
+
+.fmCartTable th {
+    background: var(--brand-primary);
+    color: var(--brand-text-rev);
+    padding: 1rem;
+}
+
+.fmCartTable td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--brand-secondary);
+}
+
+.fmCartTable > * > tr > *:nth-child(3),
+.fmCartTable > * > tr > *:nth-child(4),
+.fmCartTable tfoot td {
+    text-align: right;
+}
+
+.fmCartTable tfoot {
+    font-weight: bold;
+    border-top: 4px double var(--brand-primary);
+}
+
+.fmCartTable tfoot > *:last-child {
+    border-top: 4px solid var(--brand-primary);
+    background-color: var(--brand-tertiary)
+
+}
+
+.fmCartTable__taxForm {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+
+/* Footer */
+
+.fmFooter {
+    background: var(--brand-primary);
+    color: var(--brand-text-rev);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.fmFooter__inner {
+    max-width: var(--max-content-width);
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Supply Order</title>
+
+    <link rel="icon" href="images/farmer-logo-rev.svg" sizes="any" type="image/svg+xml">
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/data.js" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header class="fmHeader">
+            <div class="fmHeader__logo">
+                <div class="fmHeader__logo_inner">
+                <a href="#"><img src="images/farmer-logo-rev.svg" alt="Farmer Supply Co" class="fmHeader__logo_image"/></a>
+                <h1>Farmer's Supply Co: Your Order</h1>
+            </div>
+        </div>
+
+            <nav class="fmHeader__nav">
+                <div class="fmHeader__nav_inner">
+
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                </div>
+            </nav>
+    </header>
+
+    <main class="fmMain">
+
+        <h1>Your Shopping Cart</h1>
+        <table class="fmCartTable">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Subtotal</td>
+                    <td id="fmCartTable__subTotal">$0.00</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <form action="#" method="get" class="fmCartTable__taxForm">
+                            <label for="taxSelection">Tax District</label>
+                            <select id="taxSelection">
+                                <option value="0">Select a tax district</option>
+                            </select>
+                        </form>
+                    </td>
+                    <td id="fmCartTable__taxTotal">$0.00</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td id="fmCartTable__Total">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </main>
+
+    <footer class="fmFooter">
+        <div class="fmFooter__inner">
+        <p>&copy; 4025 Future Farmer Supply Co. All rights reserved.</p>
+    </div>
+    </footer>
+</body>
+</html>
